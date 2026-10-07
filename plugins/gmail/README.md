@@ -1,6 +1,6 @@
 # Gmail
 
-Read and search email and prepare drafts. Agents never send: you review and send.
+Read and search email, prepare drafts and send them, always after you approve the text.
 
 ## How it connects
 
@@ -16,10 +16,11 @@ gmail.readonly, gmail.compose
 
 - Search threads, read threads and messages, list labels and drafts
 - Create drafts, including replies in a thread
+- Send a draft, only after showing you the recipient, subject and text and getting your approval (through the Gmail API: Google's MCP server has no send tool)
 
 ## What agents don't do
 
-- Send email
+- Send anything you haven't approved
 - Label, archive, trash or mark as spam (needs gmail.modify, which is not requested)
 
 Anything that changes something on your behalf (sending, publishing, editing, approving) needs your confirmation first.

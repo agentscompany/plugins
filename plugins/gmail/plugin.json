@@ -2,8 +2,8 @@
   "id": "gmail",
   "name": "Gmail",
   "description": {
-    "en": "Read and search email and prepare drafts. Agents never send: you review and send.",
-    "pt-BR": "Ler e buscar e-mails e preparar rascunhos. Os bots não enviam: você revisa e envia."
+    "en": "Read and search email, prepare drafts and send them, always after you approve the text.",
+    "pt-BR": "Ler e buscar e-mails, preparar rascunhos e enviar, sempre depois de você aprovar o texto."
   },
   "category": "productivity",
   "developer": "Google",
