@@ -1,0 +1,21 @@
+{
+  "id": "googlecalendar",
+  "name": "Google Calendar",
+  "description": {
+    "en": "See your schedule, find free time and create, edit or answer events.",
+    "pt-BR": "Ver a agenda, achar horários livres e criar, editar ou responder eventos."
+  },
+  "category": "productivity",
+  "developer": "Google",
+  "website": "https://calendar.google.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://calendarmcp.googleapis.com/mcp/v1",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.readonly",
+      "https://www.googleapis.com/auth/calendar.events"
+    ],
+    "fallback": "Google Calendar REST API (same login) while Google's MCP server is in Developer Preview"
+  }
+}

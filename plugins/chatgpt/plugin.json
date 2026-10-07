@@ -1,0 +1,19 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT Images",
+  "description": {
+    "en": "Generate and edit photos with Codex signed in to your ChatGPT account, without an API key.",
+    "pt-BR": "Gerar e editar fotos com o Codex logado na sua conta do ChatGPT, sem chave de API."
+  },
+  "category": "creative",
+  "developer": "OpenAI",
+  "website": "https://chatgpt.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "agent-cli",
+    "program": "codex",
+    "login": "ChatGPT login in your browser",
+    "runs_on": "the workspace computer (PC)"
+  },
+  "logo_dark": "logo-dark.svg"
+}

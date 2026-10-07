@@ -1,0 +1,19 @@
+{
+  "id": "github",
+  "name": "GitHub",
+  "description": {
+    "en": "Agents follow, open and review pull requests and read issues with your account, through gh, GitHub's official CLI.",
+    "pt-BR": "Os bots acompanham, abrem e revisam pull requests e leem issues com a sua conta, pelo gh, o programa oficial do GitHub."
+  },
+  "category": "development",
+  "developer": "GitHub",
+  "website": "https://github.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "cli-tool",
+    "program": "gh",
+    "login": "device code (github.com/login/device)",
+    "runs_on": "the workspace computer (PC)"
+  },
+  "logo_dark": "logo-dark.svg"
+}

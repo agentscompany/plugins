@@ -1,0 +1,18 @@
+{
+  "id": "jira",
+  "name": "Jira",
+  "description": {
+    "en": "Agents see the tickets assigned to you, comment and move their status, through acli, Atlassian's official CLI.",
+    "pt-BR": "Os bots veem os tickets atribuídos a você, comentam e mudam o status, pelo acli, o programa oficial da Atlassian."
+  },
+  "category": "development",
+  "developer": "Atlassian",
+  "website": "https://www.atlassian.com/software/jira",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "cli-tool",
+    "program": "acli",
+    "login": "OAuth in your browser, then pick the Jira site",
+    "runs_on": "the workspace computer (PC)"
+  }
+}

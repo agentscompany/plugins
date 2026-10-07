@@ -1,0 +1,17 @@
+{
+  "id": "shopee",
+  "name": "Shopee",
+  "description": {
+    "en": "Business insights and products in Seller Centre, in the agent's browser, signed in to your account.",
+    "pt-BR": "Dados do negócio e produtos na Central do Vendedor, no navegador do bot, logado na sua conta."
+  },
+  "category": "sales",
+  "developer": "Shopee",
+  "website": "https://seller.shopee.com.br",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "browser",
+    "url": "https://seller.shopee.com.br/",
+    "login": "You sign in yourself in the agent's browser (you take over the screen)"
+  }
+}

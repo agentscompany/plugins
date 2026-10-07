@@ -1,0 +1,23 @@
+{
+  "id": "gemini",
+  "name": "Gemini",
+  "description": {
+    "en": "Generate and edit images with Nano Banana: product photos, backgrounds and variations. Billed to the Google account of the key.",
+    "pt-BR": "Gerar e editar imagens com o Nano Banana: fotos de produto, fundos e variações. Cobrado na conta do Google da chave."
+  },
+  "category": "creative",
+  "developer": "Google",
+  "website": "https://aistudio.google.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "api-key",
+    "provider": "Google AI Studio",
+    "api": "https://generativelanguage.googleapis.com/v1beta",
+    "models": [
+      "gemini-nano-banana-2.1",
+      "gemini-3.1-flash-lite-image",
+      "gemini-3.1-flash-image",
+      "gemini-3-pro-image"
+    ]
+  }
+}

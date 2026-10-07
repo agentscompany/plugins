@@ -1,0 +1,17 @@
+{
+  "id": "mercadolivre",
+  "name": "Mercado Livre",
+  "description": {
+    "en": "Sales, metrics and listings: the agent uses the site in its own browser, signed in to your seller account.",
+    "pt-BR": "Vendas, métricas e anúncios: o bot usa o site no navegador dele, logado na sua conta de vendedor."
+  },
+  "category": "sales",
+  "developer": "Mercado Livre",
+  "website": "https://www.mercadolivre.com.br",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "browser",
+    "url": "https://www.mercadolivre.com.br/",
+    "login": "You sign in yourself in the agent's browser (you take over the screen)"
+  }
+}
