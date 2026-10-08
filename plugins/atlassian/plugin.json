@@ -1,0 +1,30 @@
+{
+  "id": "atlassian",
+  "name": "Atlassian",
+  "description": {
+    "en": "Jira and Confluence: agents see the tickets assigned to you, comment, move status, create tasks and read and write pages.",
+    "pt-BR": "Jira e Confluence: os bots veem os tickets atribuídos a você, comentam, mudam o status, criam tarefas e leem e escrevem páginas."
+  },
+  "category": "development",
+  "developer": "Atlassian",
+  "website": "https://www.atlassian.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.atlassian.com/v2/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in; nothing to create on Atlassian's side)",
+    "scopes": [
+      "read:me",
+      "read:account",
+      "offline_access",
+      "email",
+      "read:jira:agent-interface",
+      "write:jira:agent-interface",
+      "search:jira:agent-interface",
+      "read:confluence:agent-interface",
+      "write:confluence:agent-interface",
+      "search:confluence:agent-interface",
+      "search:rovo:agent-interface"
+    ]
+  }
+}
