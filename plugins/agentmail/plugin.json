@@ -1,0 +1,24 @@
+{
+  "id": "agentmail",
+  "name": "AgentMail",
+  "description": {
+    "en": "Email inboxes for your agents: create addresses, receive, read, reply and send email, with your AgentMail account.",
+    "pt-BR": "Caixas de e-mail próprias para os bots: criar endereços, receber, ler, responder e enviar e-mails, com a sua conta AgentMail."
+  },
+  "category": "productivity",
+  "developer": "AgentMail",
+  "website": "https://agentmail.to",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.agentmail.to",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "offline_access",
+      "user:org:read"
+    ]
+  }
+}
