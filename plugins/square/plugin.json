@@ -1,0 +1,20 @@
+{
+  "id": "square",
+  "name": "Square",
+  "description": {
+    "en": "Point of sale, catalog, orders and payments.",
+    "pt-BR": "Ponto de venda, catálogo, pedidos e pagamentos."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Block",
+  "website": "https://squareup.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.squareup.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "webflow",
+  "name": "Webflow",
+  "description": {
+    "en": "Your Webflow sites: pages, CMS content and publishing.",
+    "pt-BR": "Os seus sites no Webflow: páginas, conteúdo do CMS e publicação."
+  },
+  "category": "creative",
+  "categories": [
+    "creative"
+  ],
+  "developer": "Webflow",
+  "website": "https://webflow.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.webflow.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

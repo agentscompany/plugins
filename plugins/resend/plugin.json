@@ -1,0 +1,21 @@
+{
+  "id": "resend",
+  "name": "Resend",
+  "description": {
+    "en": "Transactional email: send emails, manage domains and audiences.",
+    "pt-BR": "E-mail transacional: enviar e-mails, gerenciar domínios e públicos."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Resend",
+  "website": "https://resend.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.resend.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  },
+  "logo_dark": "logo-dark.svg"
+}

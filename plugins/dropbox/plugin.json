@@ -1,0 +1,31 @@
+{
+  "id": "dropbox",
+  "name": "Dropbox",
+  "description": {
+    "en": "Files: agents search, read and save files in your Dropbox.",
+    "pt-BR": "Arquivos: os bots buscam, leem e salvam arquivos no seu Dropbox."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Dropbox",
+  "website": "https://www.dropbox.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.dropbox.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "account_info.read",
+      "file_requests.read",
+      "file_requests.write",
+      "files.content.read",
+      "files.content.write",
+      "files.metadata.read",
+      "files.metadata.write",
+      "sharing.read",
+      "sharing.write"
+    ]
+  }
+}

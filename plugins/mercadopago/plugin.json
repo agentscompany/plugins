@@ -1,0 +1,25 @@
+{
+  "id": "mercadopago",
+  "name": "Mercado Pago",
+  "description": {
+    "en": "Payments, sales and reconciliation: what came in, fees, what is still to be released and disputes.",
+    "pt-BR": "Pagamentos, vendas e conciliação: o que entrou, as taxas, o que ainda vai cair e as disputas."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Mercado Pago",
+  "website": "https://www.mercadopago.com.br",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.mercadopago.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "offline_access",
+      "write",
+      "read"
+    ]
+  }
+}

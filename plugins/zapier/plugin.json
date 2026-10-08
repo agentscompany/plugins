@@ -1,0 +1,25 @@
+{
+  "id": "zapier",
+  "name": "Zapier",
+  "description": {
+    "en": "Thousands of apps without their own connector, and automations agents can set up for you.",
+    "pt-BR": "Milhares de apps sem conector próprio, e automações que os bots montam para você."
+  },
+  "category": "automation",
+  "categories": [
+    "automation"
+  ],
+  "developer": "Zapier",
+  "website": "https://zapier.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.zapier.com/api/mcp/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "openid",
+      "profile",
+      "email"
+    ]
+  }
+}

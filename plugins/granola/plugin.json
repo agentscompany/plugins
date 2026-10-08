@@ -1,0 +1,24 @@
+{
+  "id": "granola",
+  "name": "Granola",
+  "description": {
+    "en": "Meeting notes and transcripts: agents turn decisions into tasks and answer what was agreed.",
+    "pt-BR": "Notas e transcrições de reuniões: os bots transformam decisões em tarefas e respondem o que foi combinado."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Granola",
+  "website": "https://www.granola.ai",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.granola.ai/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp"
+    ]
+  },
+  "logo_dark": "logo-dark.svg"
+}

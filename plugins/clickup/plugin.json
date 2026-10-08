@@ -1,0 +1,24 @@
+{
+  "id": "clickup",
+  "name": "ClickUp",
+  "description": {
+    "en": "Tasks, docs and goals: agents create and update work in your ClickUp spaces.",
+    "pt-BR": "Tarefas, documentos e metas: os bots criam e atualizam o trabalho nos seus espaços do ClickUp."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "ClickUp",
+  "website": "https://clickup.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.clickup.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "read",
+      "write"
+    ]
+  }
+}

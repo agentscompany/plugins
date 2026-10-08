@@ -29,6 +29,35 @@
       ]
     },
     {
+      "id": "airtable",
+      "name": "Airtable",
+      "description": {
+        "en": "Bases and records: agents read, add and update rows in your bases.",
+        "pt-BR": "Bases e registros: os bots leem, adicionam e atualizam linhas nas suas bases."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Airtable",
+      "website": "https://airtable.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.airtable.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "data.records:read",
+          "data.records:write",
+          "schema.bases:read",
+          "schema.bases:write",
+          "data.recordComments:read",
+          "data.recordComments:write",
+          "workspacesAndBases:read"
+        ]
+      }
+    },
+    {
       "id": "aistudio",
       "name": "Google AI Studio",
       "description": {
@@ -88,6 +117,44 @@
       ]
     },
     {
+      "id": "canva",
+      "name": "Canva",
+      "description": {
+        "en": "Designs from your brand: posts, banners and listing images from your product photos.",
+        "pt-BR": "Artes com a sua marca: posts, banners e imagens de anúncio a partir das fotos dos produtos."
+      },
+      "category": "creative",
+      "categories": [
+        "creative"
+      ],
+      "developer": "Canva",
+      "website": "https://www.canva.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.canva.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "profile:read",
+          "design:meta:read",
+          "design:content:write",
+          "design:content:read",
+          "folder:read",
+          "folder:write",
+          "brandtemplate:content:read",
+          "brandtemplate:meta:read",
+          "brandtemplate:content:write",
+          "comment:write",
+          "comment:read",
+          "asset:read",
+          "asset:write",
+          "brandkit:read",
+          "help:answers:read",
+          "help:answers:write"
+        ]
+      }
+    },
+    {
       "id": "claude",
       "name": "Claude Code",
       "description": {
@@ -107,6 +174,100 @@
         "program": "claude",
         "login": "the CLI's own sign-in, opened in your browser",
         "runs_on": "the workspace computer (PC)"
+      }
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "description": {
+        "en": "Tasks, docs and goals: agents create and update work in your ClickUp spaces.",
+        "pt-BR": "Tarefas, documentos e metas: os bots criam e atualizam o trabalho nos seus espaços do ClickUp."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "ClickUp",
+      "website": "https://clickup.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.clickup.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "description": {
+        "en": "CRM: leads, deals and follow-ups; agents update your pipeline.",
+        "pt-BR": "CRM: leads, negócios e follow-ups; os bots atualizam o seu funil."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Close",
+      "website": "https://www.close.com",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.close.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp.read",
+          "mcp.write_destructive",
+          "mcp.write_safe",
+          "offline_access"
+        ]
+      }
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "description": {
+        "en": "Workers, storage and DNS: agents build and manage what runs on Cloudflare.",
+        "pt-BR": "Workers, armazenamento e DNS: os bots criam e gerenciam o que roda na Cloudflare."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Cloudflare",
+      "website": "https://www.cloudflare.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://bindings.mcp.cloudflare.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "description": {
+        "en": "Up-to-date library documentation for coding, so agents don't rely on outdated APIs.",
+        "pt-BR": "Documentação atualizada de bibliotecas para programar, sem depender de APIs desatualizadas."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Upstash",
+      "website": "https://context7.com",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.context7.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "profile",
+          "email"
+        ]
       }
     },
     {
@@ -131,6 +292,60 @@
         "brains",
         "development"
       ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "description": {
+        "en": "Files: agents search, read and save files in your Dropbox.",
+        "pt-BR": "Arquivos: os bots buscam, leem e salvam arquivos no seu Dropbox."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Dropbox",
+      "website": "https://www.dropbox.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.dropbox.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "account_info.read",
+          "file_requests.read",
+          "file_requests.write",
+          "files.content.read",
+          "files.content.write",
+          "files.metadata.read",
+          "files.metadata.write",
+          "sharing.read",
+          "sharing.write"
+        ]
+      }
+    },
+    {
+      "id": "exa",
+      "name": "Exa",
+      "description": {
+        "en": "Web search built for AI: better and cheaper research than browsing page by page.",
+        "pt-BR": "Busca na web feita para IA: pesquisa melhor e mais barata que navegar página por página."
+      },
+      "category": "research",
+      "categories": [
+        "research"
+      ],
+      "developer": "Exa",
+      "website": "https://exa.ai",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.exa.ai/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp:tools"
+        ]
+      }
     },
     {
       "id": "figma",
@@ -165,6 +380,30 @@
       "categories": [
         "creative"
       ]
+    },
+    {
+      "id": "fireflies",
+      "name": "Fireflies",
+      "description": {
+        "en": "Meeting transcripts and summaries: search past meetings and pull action items.",
+        "pt-BR": "Transcrições e resumos de reuniões: buscar reuniões passadas e tirar os próximos passos."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Fireflies.ai",
+      "website": "https://fireflies.ai",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://api.fireflies.ai/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "profile",
+          "email"
+        ]
+      }
     },
     {
       "id": "github",
@@ -237,6 +476,30 @@
       ]
     },
     {
+      "id": "granola",
+      "name": "Granola",
+      "description": {
+        "en": "Meeting notes and transcripts: agents turn decisions into tasks and answer what was agreed.",
+        "pt-BR": "Notas e transcrições de reuniões: os bots transformam decisões em tarefas e respondem o que foi combinado."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Granola",
+      "website": "https://www.granola.ai",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.granola.ai/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp"
+        ]
+      },
+      "logo_dark": "logo-dark.svg"
+    },
+    {
       "id": "grok",
       "name": "Grok",
       "description": {
@@ -257,6 +520,49 @@
         "runs_on": "the workspace computer (PC)"
       },
       "logo_dark": "logo-dark.svg"
+    },
+    {
+      "id": "intercom",
+      "name": "Intercom",
+      "description": {
+        "en": "Customer support: agents read conversations and tickets and draft replies.",
+        "pt-BR": "Atendimento ao cliente: os bots leem conversas e tickets e rascunham respostas."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Intercom",
+      "website": "https://www.intercom.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.intercom.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp"
+        ]
+      }
+    },
+    {
+      "id": "klaviyo",
+      "name": "Klaviyo",
+      "description": {
+        "en": "Email and SMS marketing: lists, campaigns and results.",
+        "pt-BR": "E-mail e SMS marketing: listas, campanhas e resultados."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Klaviyo",
+      "website": "https://www.klaviyo.com",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.klaviyo.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
     },
     {
       "id": "linear",
@@ -314,6 +620,99 @@
       ]
     },
     {
+      "id": "mercadopago",
+      "name": "Mercado Pago",
+      "description": {
+        "en": "Payments, sales and reconciliation: what came in, fees, what is still to be released and disputes.",
+        "pt-BR": "Pagamentos, vendas e conciliação: o que entrou, as taxas, o que ainda vai cair e as disputas."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Mercado Pago",
+      "website": "https://www.mercadopago.com.br",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.mercadopago.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "offline_access",
+          "write",
+          "read"
+        ]
+      }
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "description": {
+        "en": "Serverless Postgres: agents create databases and branches and run queries.",
+        "pt-BR": "Postgres serverless: os bots criam bancos e branches e rodam consultas."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Neon",
+      "website": "https://neon.tech",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.neon.tech/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "description": {
+        "en": "Sites and deploys: agents create, deploy and check sites and their logs.",
+        "pt-BR": "Sites e deploys: os bots criam, publicam e conferem sites e seus logs."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Netlify",
+      "website": "https://www.netlify.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://netlify-mcp.netlify.app/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "offline_access",
+          "read",
+          "write"
+        ]
+      }
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "description": {
+        "en": "Pages and databases: agents read, write and organize your docs, notes and project databases.",
+        "pt-BR": "Páginas e bases: os bots leem, escrevem e organizam seus documentos, notas e bases de projeto."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Notion",
+      "website": "https://www.notion.so",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.notion.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "default"
+        ]
+      }
+    },
+    {
       "id": "openai",
       "name": "OpenAI",
       "description": {
@@ -358,6 +757,229 @@
         "runs_on": "the workspace computer (PC)"
       },
       "logo_dark": "logo-dark.svg"
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "description": {
+        "en": "Payments, invoices and disputes with your PayPal account.",
+        "pt-BR": "Pagamentos, faturas e disputas com a sua conta PayPal."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "PayPal",
+      "website": "https://www.paypal.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.paypal.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "description": {
+        "en": "Product analytics, feature flags and experiments: agents answer how users use your product.",
+        "pt-BR": "Analytics de produto, feature flags e experimentos: os bots respondem como usam o seu produto."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "PostHog",
+      "website": "https://posthog.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.posthog.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "description": {
+        "en": "Transactional email: send emails, manage domains and audiences.",
+        "pt-BR": "E-mail transacional: enviar e-mails, gerenciar domínios e públicos."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Resend",
+      "website": "https://resend.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.resend.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      },
+      "logo_dark": "logo-dark.svg"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "description": {
+        "en": "Production errors and performance: agents read issues and stack traces and open fixes.",
+        "pt-BR": "Erros e desempenho em produção: os bots leem os erros e os rastros e abrem a correção."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Sentry",
+      "website": "https://sentry.io",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.sentry.dev/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "org:read",
+          "project:write",
+          "team:write",
+          "event:write",
+          "alerts:write"
+        ]
+      }
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "description": {
+        "en": "Point of sale, catalog, orders and payments.",
+        "pt-BR": "Ponto de venda, catálogo, pedidos e pagamentos."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Block",
+      "website": "https://squareup.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.squareup.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "description": {
+        "en": "Payments and subscriptions: customers, invoices, refunds and revenue.",
+        "pt-BR": "Pagamentos e assinaturas: clientes, faturas, reembolsos e receita."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "Stripe",
+      "website": "https://stripe.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.stripe.com",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp"
+        ]
+      }
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "description": {
+        "en": "Tasks and projects: agents add, organize and close your to-dos.",
+        "pt-BR": "Tarefas e projetos: os bots adicionam, organizam e concluem seus afazeres."
+      },
+      "category": "productivity",
+      "categories": [
+        "productivity"
+      ],
+      "developer": "Doist",
+      "website": "https://todoist.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://ai.todoist.net/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "data:read_write"
+        ]
+      }
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "description": {
+        "en": "Your Webflow sites: pages, CMS content and publishing.",
+        "pt-BR": "Os seus sites no Webflow: páginas, conteúdo do CMS e publicação."
+      },
+      "category": "creative",
+      "categories": [
+        "creative"
+      ],
+      "developer": "Webflow",
+      "website": "https://webflow.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.webflow.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)"
+      }
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "description": {
+        "en": "Your Wix site and store: products, orders, pages and content.",
+        "pt-BR": "O seu site e loja Wix: produtos, pedidos, páginas e conteúdo."
+      },
+      "category": "sales",
+      "categories": [
+        "sales",
+        "creative"
+      ],
+      "developer": "Wix",
+      "website": "https://www.wix.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.wix.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "offline_access"
+        ]
+      }
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "description": {
+        "en": "Thousands of apps without their own connector, and automations agents can set up for you.",
+        "pt-BR": "Milhares de apps sem conector próprio, e automações que os bots montam para você."
+      },
+      "category": "automation",
+      "categories": [
+        "automation"
+      ],
+      "developer": "Zapier",
+      "website": "https://zapier.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.zapier.com/api/mcp/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "id": "intercom",
+  "name": "Intercom",
+  "description": {
+    "en": "Customer support: agents read conversations and tickets and draft replies.",
+    "pt-BR": "Atendimento ao cliente: os bots leem conversas e tickets e rascunham respostas."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Intercom",
+  "website": "https://www.intercom.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.intercom.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp"
+    ]
+  }
+}

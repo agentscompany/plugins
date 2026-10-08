@@ -1,0 +1,20 @@
+{
+  "id": "klaviyo",
+  "name": "Klaviyo",
+  "description": {
+    "en": "Email and SMS marketing: lists, campaigns and results.",
+    "pt-BR": "E-mail e SMS marketing: listas, campanhas e resultados."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Klaviyo",
+  "website": "https://www.klaviyo.com",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.klaviyo.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

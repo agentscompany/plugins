@@ -1,0 +1,20 @@
+{
+  "id": "paypal",
+  "name": "PayPal",
+  "description": {
+    "en": "Payments, invoices and disputes with your PayPal account.",
+    "pt-BR": "Pagamentos, faturas e disputas com a sua conta PayPal."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "PayPal",
+  "website": "https://www.paypal.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.paypal.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "netlify",
+  "name": "Netlify",
+  "description": {
+    "en": "Sites and deploys: agents create, deploy and check sites and their logs.",
+    "pt-BR": "Sites e deploys: os bots criam, publicam e conferem sites e seus logs."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Netlify",
+  "website": "https://www.netlify.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://netlify-mcp.netlify.app/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "offline_access",
+      "read",
+      "write"
+    ]
+  }
+}

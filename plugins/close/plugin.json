@@ -1,0 +1,26 @@
+{
+  "id": "close",
+  "name": "Close",
+  "description": {
+    "en": "CRM: leads, deals and follow-ups; agents update your pipeline.",
+    "pt-BR": "CRM: leads, negócios e follow-ups; os bots atualizam o seu funil."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Close",
+  "website": "https://www.close.com",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.close.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp.read",
+      "mcp.write_destructive",
+      "mcp.write_safe",
+      "offline_access"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "notion",
+  "name": "Notion",
+  "description": {
+    "en": "Pages and databases: agents read, write and organize your docs, notes and project databases.",
+    "pt-BR": "Páginas e bases: os bots leem, escrevem e organizam seus documentos, notas e bases de projeto."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Notion",
+  "website": "https://www.notion.so",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.notion.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "default"
+    ]
+  }
+}

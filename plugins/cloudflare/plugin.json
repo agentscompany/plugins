@@ -1,0 +1,20 @@
+{
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "description": {
+    "en": "Workers, storage and DNS: agents build and manage what runs on Cloudflare.",
+    "pt-BR": "Workers, armazenamento e DNS: os bots criam e gerenciam o que roda na Cloudflare."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Cloudflare",
+  "website": "https://www.cloudflare.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://bindings.mcp.cloudflare.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

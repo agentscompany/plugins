@@ -1,0 +1,20 @@
+{
+  "id": "posthog",
+  "name": "PostHog",
+  "description": {
+    "en": "Product analytics, feature flags and experiments: agents answer how users use your product.",
+    "pt-BR": "Analytics de produto, feature flags e experimentos: os bots respondem como usam o seu produto."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "PostHog",
+  "website": "https://posthog.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.posthog.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

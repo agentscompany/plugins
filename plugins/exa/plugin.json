@@ -1,0 +1,23 @@
+{
+  "id": "exa",
+  "name": "Exa",
+  "description": {
+    "en": "Web search built for AI: better and cheaper research than browsing page by page.",
+    "pt-BR": "Busca na web feita para IA: pesquisa melhor e mais barata que navegar página por página."
+  },
+  "category": "research",
+  "categories": [
+    "research"
+  ],
+  "developer": "Exa",
+  "website": "https://exa.ai",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.exa.ai/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp:tools"
+    ]
+  }
+}

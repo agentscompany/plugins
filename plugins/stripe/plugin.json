@@ -1,0 +1,23 @@
+{
+  "id": "stripe",
+  "name": "Stripe",
+  "description": {
+    "en": "Payments and subscriptions: customers, invoices, refunds and revenue.",
+    "pt-BR": "Pagamentos e assinaturas: clientes, faturas, reembolsos e receita."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "Stripe",
+  "website": "https://stripe.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.stripe.com",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp"
+    ]
+  }
+}

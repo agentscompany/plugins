@@ -1,0 +1,24 @@
+{
+  "id": "fireflies",
+  "name": "Fireflies",
+  "description": {
+    "en": "Meeting transcripts and summaries: search past meetings and pull action items.",
+    "pt-BR": "Transcrições e resumos de reuniões: buscar reuniões passadas e tirar os próximos passos."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Fireflies.ai",
+  "website": "https://fireflies.ai",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://api.fireflies.ai/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "profile",
+      "email"
+    ]
+  }
+}

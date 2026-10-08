@@ -1,0 +1,20 @@
+{
+  "id": "neon",
+  "name": "Neon",
+  "description": {
+    "en": "Serverless Postgres: agents create databases and branches and run queries.",
+    "pt-BR": "Postgres serverless: os bots criam bancos e branches e rodam consultas."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Neon",
+  "website": "https://neon.tech",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.neon.tech/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "wix",
+  "name": "Wix",
+  "description": {
+    "en": "Your Wix site and store: products, orders, pages and content.",
+    "pt-BR": "O seu site e loja Wix: produtos, pedidos, páginas e conteúdo."
+  },
+  "category": "sales",
+  "categories": [
+    "sales",
+    "creative"
+  ],
+  "developer": "Wix",
+  "website": "https://www.wix.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.wix.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "offline_access"
+    ]
+  }
+}

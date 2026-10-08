@@ -1,0 +1,23 @@
+{
+  "id": "todoist",
+  "name": "Todoist",
+  "description": {
+    "en": "Tasks and projects: agents add, organize and close your to-dos.",
+    "pt-BR": "Tarefas e projetos: os bots adicionam, organizam e concluem seus afazeres."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Doist",
+  "website": "https://todoist.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://ai.todoist.net/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "data:read_write"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "airtable",
+  "name": "Airtable",
+  "description": {
+    "en": "Bases and records: agents read, add and update rows in your bases.",
+    "pt-BR": "Bases e registros: os bots leem, adicionam e atualizam linhas nas suas bases."
+  },
+  "category": "productivity",
+  "categories": [
+    "productivity"
+  ],
+  "developer": "Airtable",
+  "website": "https://airtable.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.airtable.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "data.records:read",
+      "data.records:write",
+      "schema.bases:read",
+      "schema.bases:write",
+      "data.recordComments:read",
+      "data.recordComments:write",
+      "workspacesAndBases:read"
+    ]
+  }
+}

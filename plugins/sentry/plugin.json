@@ -1,0 +1,27 @@
+{
+  "id": "sentry",
+  "name": "Sentry",
+  "description": {
+    "en": "Production errors and performance: agents read issues and stack traces and open fixes.",
+    "pt-BR": "Erros e desempenho em produção: os bots leem os erros e os rastros e abrem a correção."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Sentry",
+  "website": "https://sentry.io",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.sentry.dev/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "org:read",
+      "project:write",
+      "team:write",
+      "event:write",
+      "alerts:write"
+    ]
+  }
+}
