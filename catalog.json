@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "agentmail",
+      "name": "AgentMail",
+      "description": {
+        "en": "Email inboxes for your agents: create addresses, receive, read, reply and send email, with your AgentMail account.",
+        "pt-BR": "Caixas de e-mail próprias para os bots: criar endereços, receber, ler, responder e enviar e-mails, com a sua conta AgentMail."
+      },
+      "category": "productivity",
+      "developer": "AgentMail",
+      "website": "https://agentmail.to",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.agentmail.to",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "openid",
+          "profile",
+          "email",
+          "offline_access",
+          "user:org:read"
+        ]
+      },
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "id": "aistudio",
+      "name": "Google AI Studio",
+      "description": {
+        "en": "Gemini and Nano Banana with a Google AI Studio key: generate and edit images (product photos, backgrounds, variations). Billed to the Google account of the key.",
+        "pt-BR": "Gemini e Nano Banana com a chave do Google AI Studio: gerar e editar imagens (fotos de produto, fundos e variações). Cobrado na conta do Google da chave."
+      },
+      "category": "creative",
+      "developer": "Google",
+      "website": "https://aistudio.google.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "api-key",
+        "provider": "Google AI Studio",
+        "api": "https://generativelanguage.googleapis.com/v1beta",
+        "models": [
+          "gemini-nano-banana-2.1",
+          "gemini-3.1-flash-lite-image",
+          "gemini-3.1-flash-image",
+          "gemini-3-pro-image"
+        ]
+      },
+      "categories": [
+        "creative"
+      ]
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "description": {
+        "en": "Jira and Confluence: agents see the tickets assigned to you, comment, move status, create tasks and read and write pages.",
+        "pt-BR": "Jira e Confluence: os bots veem os tickets atribuídos a você, comentam, mudam o status, criam tarefas e leem e escrevem páginas."
+      },
+      "category": "development",
+      "developer": "Atlassian",
+      "website": "https://www.atlassian.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.atlassian.com/v2/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in; nothing to create on Atlassian's side)",
+        "scopes": [
+          "read:me",
+          "read:account",
+          "offline_access",
+          "email",
+          "read:jira:agent-interface",
+          "write:jira:agent-interface",
+          "search:jira:agent-interface",
+          "read:confluence:agent-interface",
+          "write:confluence:agent-interface",
+          "search:confluence:agent-interface",
+          "search:rovo:agent-interface"
+        ]
+      },
+      "categories": [
+        "development"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Code",
+      "description": {
+        "en": "Claude Code with your Claude subscription as your agents' brain; you can add more than one account.",
+        "pt-BR": "O Claude Code com a sua assinatura do Claude como cérebro dos bots; dá para ter mais de uma conta."
+      },
+      "category": "brains",
+      "categories": [
+        "brains",
+        "development"
+      ],
+      "developer": "Anthropic",
+      "website": "https://claude.com/claude-code",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "agent-cli",
+        "program": "claude",
+        "login": "the CLI's own sign-in, opened in your browser",
+        "runs_on": "the workspace computer (PC)"
+      }
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "description": {
+        "en": "Agents hand coding tasks to Cursor's agent with your subscription and review the result.",
+        "pt-BR": "Os bots passam tarefas de código para o agente do Cursor, com a sua assinatura, e revisam o resultado."
+      },
+      "category": "brains",
+      "developer": "Anysphere",
+      "website": "https://cursor.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "agent-cli",
+        "program": "cursor-agent",
+        "login": "Cursor login in your browser",
+        "runs_on": "the workspace computer (PC)"
+      },
+      "logo_dark": "logo-dark.svg",
+      "categories": [
+        "brains",
+        "development"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "description": {
+        "en": "Agents read files and frames, export screens as images and read and write comments, with your Figma account.",
+        "pt-BR": "Os bots leem arquivos e frames, exportam telas como imagem e leem e escrevem comentários, com a sua conta do Figma."
+      },
+      "category": "creative",
+      "developer": "Figma",
+      "website": "https://www.figma.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "oauth-api",
+        "api": "https://api.figma.com/v1",
+        "app": "Agents Company (Figma developer app)",
+        "redirect": "https://auth.agentscompany.ai/figma",
+        "scopes": [
+          "current_user:read",
+          "file_content:read",
+          "file_metadata:read",
+          "file_versions:read",
+          "file_comments:read",
+          "file_comments:write",
+          "folder_metadata:read",
+          "library_content:read",
+          "library_assets:read",
+          "team_library_content:read",
+          "file_dev_resources:read"
+        ]
+      },
+      "categories": [
+        "creative"
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "description": {
+        "en": "Agents follow, open and review pull requests and read issues with your account, through gh, GitHub's official CLI.",
+        "pt-BR": "Os bots acompanham, abrem e revisam pull requests e leem issues com a sua conta, pelo gh, o programa oficial do GitHub."
+      },
+      "category": "development",
+      "developer": "GitHub",
+      "website": "https://github.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "cli-tool",
+        "program": "gh",
+        "login": "device code (github.com/login/device)",
+        "runs_on": "the workspace computer (PC)"
+      },
+      "logo_dark": "logo-dark.svg",
+      "categories": [
+        "development"
+      ]
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "description": {
+        "en": "Read and search email, prepare drafts and send them, always after you approve the text.",
+        "pt-BR": "Ler e buscar e-mails, preparar rascunhos e enviar, sempre depois de você aprovar o texto."
+      },
+      "category": "productivity",
+      "developer": "Google",
+      "website": "https://mail.google.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://gmailmcp.googleapis.com/mcp/v1",
+        "scopes": [
+          "https://www.googleapis.com/auth/gmail.readonly",
+          "https://www.googleapis.com/auth/gmail.compose"
+        ],
+        "fallback": "Gmail REST API (same login) while Google's MCP server is in Developer Preview"
+      },
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "id": "googlecalendar",
+      "name": "Google Calendar",
+      "description": {
+        "en": "See your schedule, find free time and create, edit or answer events.",
+        "pt-BR": "Ver a agenda, achar horários livres e criar, editar ou responder eventos."
+      },
+      "category": "productivity",
+      "developer": "Google",
+      "website": "https://calendar.google.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://calendarmcp.googleapis.com/mcp/v1",
+        "scopes": [
+          "https://www.googleapis.com/auth/calendar.readonly",
+          "https://www.googleapis.com/auth/calendar.events"
+        ],
+        "fallback": "Google Calendar REST API (same login) while Google's MCP server is in Developer Preview"
+      },
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "description": {
+        "en": "The Grok CLI with your xAI account as your agents' brain.",
+        "pt-BR": "O Grok CLI com a sua conta da xAI como cérebro dos bots."
+      },
+      "category": "brains",
+      "categories": [
+        "brains"
+      ],
+      "developer": "xAI",
+      "website": "https://x.ai",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "agent-cli",
+        "program": "grok",
+        "login": "the CLI's own sign-in, opened in your browser",
+        "runs_on": "the workspace computer (PC)"
+      },
+      "logo_dark": "logo-dark.svg"
+    },
+    {
+      "id": "mercadolivre",
+      "name": "Mercado Livre",
+      "description": {
+        "en": "Sales, visits, listing quality and questions through the official API; edit listings and answer buyers with your approval.",
+        "pt-BR": "Vendas, visitas, qualidade dos anúncios e perguntas pela API oficial; editar anúncios e responder compradores com a sua aprovação."
+      },
+      "category": "sales",
+      "developer": "Mercado Livre",
+      "website": "https://www.mercadolivre.com.br",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "oauth-api",
+        "api": "https://api.mercadolibre.com",
+        "app": "Agents Company (Mercado Livre DevCenter)",
+        "redirect": "https://auth.agentscompany.ai/mercadolivre (static page that hands the result to the app on the user's computer)",
+        "permissions": [
+          "users",
+          "pre/post-sale messaging",
+          "publishing and sync",
+          "advertising",
+          "billing (read)",
+          "business metrics",
+          "promotions",
+          "sales and shipping"
+        ]
+      },
+      "categories": [
+        "sales"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "description": {
+        "en": "Codex and ChatGPT with your account, no API key: agents hand coding tasks to Codex and generate and edit images.",
+        "pt-BR": "Codex e ChatGPT com a sua conta, sem chave de API: os bots passam tarefas de código ao Codex e geram e editam imagens."
+      },
+      "category": "brains",
+      "developer": "OpenAI",
+      "website": "https://chatgpt.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "agent-cli",
+        "program": "codex",
+        "login": "ChatGPT login in your browser",
+        "runs_on": "the workspace computer (PC)"
+      },
+      "logo_dark": "logo-dark.svg",
+      "categories": [
+        "brains",
+        "development",
+        "creative"
+      ]
+    },
+    {
+      "id": "opencode",
+      "name": "opencode",
+      "description": {
+        "en": "Open-source brain with dozens of models; works without sign-in using free models.",
+        "pt-BR": "Cérebro de código aberto, com dezenas de modelos; funciona sem login com modelos gratuitos."
+      },
+      "category": "brains",
+      "categories": [
+        "brains"
+      ],
+      "developer": "SST",
+      "website": "https://opencode.ai",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "agent-cli",
+        "program": "opencode",
+        "login": "the CLI's own sign-in, opened in your browser",
+        "runs_on": "the workspace computer (PC)"
+      },
+      "logo_dark": "logo-dark.svg"
+    }
+  ]
+}

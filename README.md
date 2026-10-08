@@ -13,6 +13,8 @@ plugins/<id>/
   README.md     what agents can and can't do, and the permissions requested
 ```
 
+`catalog.json` is the index the app reads (every 6 hours, with an offline copy). It is rebuilt from the plugin folders by `scripts/build-catalog.py`, which CI also runs on every push. A new plugin of type `mcp-oauth` whose server supports dynamic client registration works in the app without a new release; other types still need app support.
+
 ## Connection types
 
 | Type | How it works |
