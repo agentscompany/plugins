@@ -259,6 +259,30 @@
       "logo_dark": "logo-dark.svg"
     },
     {
+      "id": "linear",
+      "name": "Linear",
+      "description": {
+        "en": "Issues, projects and cycles: agents read and create issues, comment, update status and plan with your Linear account.",
+        "pt-BR": "Issues, projetos e ciclos: os bots leem e criam issues, comentam, mudam o status e planejam com a sua conta do Linear."
+      },
+      "category": "development",
+      "categories": [
+        "development"
+      ],
+      "developer": "Linear",
+      "website": "https://linear.app",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.linear.app/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    {
       "id": "mercadolivre",
       "name": "Mercado Livre",
       "description": {
