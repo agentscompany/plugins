@@ -1,0 +1,31 @@
+{
+  "id": "figma",
+  "name": "Figma",
+  "description": {
+    "en": "Agents read files and frames, export screens as images and read and write comments, with your Figma account.",
+    "pt-BR": "Os bots leem arquivos e frames, exportam telas como imagem e leem e escrevem comentários, com a sua conta do Figma."
+  },
+  "category": "creative",
+  "developer": "Figma",
+  "website": "https://www.figma.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "oauth-api",
+    "api": "https://api.figma.com/v1",
+    "app": "Agents Company (Figma developer app)",
+    "redirect": "https://auth.agentscompany.ai/figma",
+    "scopes": [
+      "current_user:read",
+      "file_content:read",
+      "file_metadata:read",
+      "file_versions:read",
+      "file_comments:read",
+      "file_comments:write",
+      "folder_metadata:read",
+      "library_content:read",
+      "library_assets:read",
+      "team_library_content:read",
+      "file_dev_resources:read"
+    ]
+  }
+}
