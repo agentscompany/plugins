@@ -1,6 +1,7 @@
-# Gemini
+# Google AI Studio
 
-Generate and edit images with Nano Banana: product photos, backgrounds and variations. Billed to the Google account of the key.
+Gemini and Nano Banana with a Google AI Studio key: generate and edit images (product photos, backgrounds, variations). Billed to the Google account of the key.
+
 
 ## How it connects
 
