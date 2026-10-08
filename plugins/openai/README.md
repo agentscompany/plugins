@@ -1,6 +1,6 @@
-# ChatGPT Images
+# OpenAI
 
-Generate and edit photos with Codex signed in to your ChatGPT account, without an API key.
+Codex and ChatGPT with your account, no API key: agents hand coding tasks to Codex and generate and edit images.
 
 ## How it connects
 
@@ -12,6 +12,7 @@ Your ChatGPT plan limits (Plus or higher)
 
 ## What agents can do
 
+- Hand coding tasks to Codex (`codex exec`) in a repository and check the diff and tests
 - Generate images ($imagegen)
 - Edit reference photos
 

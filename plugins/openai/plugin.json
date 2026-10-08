@@ -1,0 +1,19 @@
+{
+  "id": "openai",
+  "name": "OpenAI",
+  "description": {
+    "en": "Codex and ChatGPT with your account, no API key: agents hand coding tasks to Codex and generate and edit images.",
+    "pt-BR": "Codex e ChatGPT com a sua conta, sem chave de API: os bots passam tarefas de código ao Codex e geram e editam imagens."
+  },
+  "category": "development",
+  "developer": "OpenAI",
+  "website": "https://chatgpt.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "agent-cli",
+    "program": "codex",
+    "login": "ChatGPT login in your browser",
+    "runs_on": "the workspace computer (PC)"
+  },
+  "logo_dark": "logo-dark.svg"
+}
