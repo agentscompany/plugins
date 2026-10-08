@@ -8,7 +8,7 @@ This repository is **data only**: manifests, logos and docs. It never contains s
 
 ```
 plugins/<id>/
-  plugin.json   name, description, category, developer, website, connection
+  plugin.json   name, description, category (and categories), developer, website, connection
   logo.svg      (and logo-dark.svg when the logo needs a dark-mode variant)
   README.md     what agents can and can't do, and the permissions requested
 ```
@@ -20,7 +20,7 @@ plugins/<id>/
 | `mcp-oauth` | The service's official remote MCP server. You sign in with OAuth to the Agents Company app; tokens stay in your Agents Company daemon and agents never see them. |
 | `api-key` | You paste an API key once in the app. It stays in the daemon; agents never see it. |
 | `cli-tool` | The service's official CLI, installed on the workspace computer, with its own login. |
-| `agent-cli` | Another agent CLI (Cursor, Codex) that agents can hand work to, signed in to your account. |
+| `agent-cli` | An agent CLI (Claude Code, Codex, Cursor, Grok, opencode) used as an agent's brain, signed in to your account; Cursor and Codex also take work from other agents. |
 | `browser` | The agent's own browser profile. You sign in yourself by taking over the screen; agents never type passwords. |
 
 In every case, anything that changes something on your behalf (sending, publishing, editing, approving) needs your confirmation first.

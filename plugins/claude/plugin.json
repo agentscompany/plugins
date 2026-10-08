@@ -1,0 +1,22 @@
+{
+  "id": "claude",
+  "name": "Claude Code",
+  "description": {
+    "en": "Claude Code with your Claude subscription as your agents' brain; you can add more than one account.",
+    "pt-BR": "O Claude Code com a sua assinatura do Claude como cérebro dos bots; dá para ter mais de uma conta."
+  },
+  "category": "brains",
+  "categories": [
+    "brains",
+    "development"
+  ],
+  "developer": "Anthropic",
+  "website": "https://claude.com/claude-code",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "agent-cli",
+    "program": "claude",
+    "login": "the CLI's own sign-in, opened in your browser",
+    "runs_on": "the workspace computer (PC)"
+  }
+}

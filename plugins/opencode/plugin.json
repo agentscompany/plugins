@@ -1,0 +1,22 @@
+{
+  "id": "opencode",
+  "name": "opencode",
+  "description": {
+    "en": "Open-source brain with dozens of models; works without sign-in using free models.",
+    "pt-BR": "Cérebro de código aberto, com dezenas de modelos; funciona sem login com modelos gratuitos."
+  },
+  "category": "brains",
+  "categories": [
+    "brains"
+  ],
+  "developer": "SST",
+  "website": "https://opencode.ai",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "agent-cli",
+    "program": "opencode",
+    "login": "the CLI's own sign-in, opened in your browser",
+    "runs_on": "the workspace computer (PC)"
+  },
+  "logo_dark": "logo-dark.svg"
+}

@@ -5,7 +5,7 @@
     "en": "Agents hand coding tasks to Cursor's agent with your subscription and review the result.",
     "pt-BR": "Os bots passam tarefas de código para o agente do Cursor, com a sua assinatura, e revisam o resultado."
   },
-  "category": "development",
+  "category": "brains",
   "developer": "Anysphere",
   "website": "https://cursor.com",
   "logo": "logo.svg",
@@ -15,5 +15,9 @@
     "login": "Cursor login in your browser",
     "runs_on": "the workspace computer (PC)"
   },
-  "logo_dark": "logo-dark.svg"
+  "logo_dark": "logo-dark.svg",
+  "categories": [
+    "brains",
+    "development"
+  ]
 }

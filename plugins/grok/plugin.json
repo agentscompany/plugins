@@ -1,0 +1,22 @@
+{
+  "id": "grok",
+  "name": "Grok",
+  "description": {
+    "en": "The Grok CLI with your xAI account as your agents' brain.",
+    "pt-BR": "O Grok CLI com a sua conta da xAI como cérebro dos bots."
+  },
+  "category": "brains",
+  "categories": [
+    "brains"
+  ],
+  "developer": "xAI",
+  "website": "https://x.ai",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "agent-cli",
+    "program": "grok",
+    "login": "the CLI's own sign-in, opened in your browser",
+    "runs_on": "the workspace computer (PC)"
+  },
+  "logo_dark": "logo-dark.svg"
+}
