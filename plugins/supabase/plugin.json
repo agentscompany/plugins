@@ -1,0 +1,20 @@
+{
+  "id": "supabase",
+  "name": "Supabase",
+  "description": {
+    "en": "Postgres projects: agents run SQL, manage tables and migrations, read logs and deploy edge functions.",
+    "pt-BR": "Projetos Postgres: os bots rodam SQL, cuidam de tabelas e migrações, leem logs e publicam edge functions."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Supabase",
+  "website": "https://supabase.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.supabase.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  }
+}

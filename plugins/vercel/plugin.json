@@ -1,0 +1,21 @@
+{
+  "id": "vercel",
+  "name": "Vercel",
+  "description": {
+    "en": "Projects and deployments: agents check deploys, read build and runtime logs and search the Vercel docs.",
+    "pt-BR": "Projetos e deploys: os bots acompanham deploys, leem logs de build e de execução e consultam a documentação da Vercel."
+  },
+  "category": "development",
+  "categories": [
+    "development"
+  ],
+  "developer": "Vercel",
+  "website": "https://vercel.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.vercel.com",
+    "registration": "dynamic (OAuth client registration at sign-in)"
+  },
+  "logo_dark": "logo-dark.svg"
+}
