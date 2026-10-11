@@ -1,0 +1,23 @@
+{
+  "id": "abacatepay",
+  "name": "AbacatePay",
+  "description": {
+    "en": "Brazilian payments: agents manage customers, create charges and Pix QR codes, payment links and coupons, with your AbacatePay account.",
+    "pt-BR": "Pagamentos no Brasil: os bots cadastram clientes, criam cobranças, QR codes de Pix, links de pagamento e cupons, com a sua conta AbacatePay."
+  },
+  "category": "sales",
+  "categories": [
+    "sales"
+  ],
+  "developer": "AbacatePay",
+  "website": "https://www.abacatepay.com",
+  "logo": "logo.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.abacatepay.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "mcp"
+    ]
+  }
+}

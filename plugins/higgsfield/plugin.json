@@ -1,0 +1,25 @@
+{
+  "id": "higgsfield",
+  "name": "Higgsfield",
+  "description": {
+    "en": "AI video and images: agents generate clips and pictures with 30+ models (Veo, Sora, Kling, Seedance, Higgsfield Soul), using your Higgsfield credits.",
+    "pt-BR": "Vídeo e imagem com IA: os bots geram clipes e imagens com mais de 30 modelos (Veo, Sora, Kling, Seedance, Higgsfield Soul), com os créditos da sua conta Higgsfield."
+  },
+  "category": "creative",
+  "categories": [
+    "creative"
+  ],
+  "developer": "Higgsfield",
+  "website": "https://higgsfield.ai",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.higgsfield.ai/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": [
+      "openid",
+      "email",
+      "offline_access"
+    ]
+  }
+}

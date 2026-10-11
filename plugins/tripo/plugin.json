@@ -1,0 +1,21 @@
+{
+  "id": "tripo",
+  "name": "Tripo",
+  "description": {
+    "en": "AI 3D models: agents turn text or images into 3D assets and download them, with your Tripo account.",
+    "pt-BR": "Modelos 3D com IA: os bots transformam texto ou imagens em modelos 3D e baixam os arquivos, com a sua conta Tripo."
+  },
+  "category": "creative",
+  "categories": [
+    "creative"
+  ],
+  "developer": "VAST (Tripo AI)",
+  "website": "https://www.tripo3d.ai",
+  "logo": "logo.png",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://developers.tripo3d.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": []
+  }
+}

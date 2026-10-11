@@ -2,6 +2,29 @@
   "version": 1,
   "plugins": [
     {
+      "id": "abacatepay",
+      "name": "AbacatePay",
+      "description": {
+        "en": "Brazilian payments: agents manage customers, create charges and Pix QR codes, payment links and coupons, with your AbacatePay account.",
+        "pt-BR": "Pagamentos no Brasil: os bots cadastram clientes, criam cobranças, QR codes de Pix, links de pagamento e cupons, com a sua conta AbacatePay."
+      },
+      "category": "sales",
+      "categories": [
+        "sales"
+      ],
+      "developer": "AbacatePay",
+      "website": "https://www.abacatepay.com",
+      "logo": "logo.svg",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.abacatepay.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "mcp"
+        ]
+      }
+    },
+    {
       "id": "agentmail",
       "name": "AgentMail",
       "description": {
@@ -522,6 +545,31 @@
       "logo_dark": "logo-dark.svg"
     },
     {
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "description": {
+        "en": "AI video and images: agents generate clips and pictures with 30+ models (Veo, Sora, Kling, Seedance, Higgsfield Soul), using your Higgsfield credits.",
+        "pt-BR": "Vídeo e imagem com IA: os bots geram clipes e imagens com mais de 30 modelos (Veo, Sora, Kling, Seedance, Higgsfield Soul), com os créditos da sua conta Higgsfield."
+      },
+      "category": "creative",
+      "categories": [
+        "creative"
+      ],
+      "developer": "Higgsfield",
+      "website": "https://higgsfield.ai",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://mcp.higgsfield.ai/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": [
+          "openid",
+          "email",
+          "offline_access"
+        ]
+      }
+    },
+    {
       "id": "intercom",
       "name": "Intercom",
       "description": {
@@ -930,6 +978,27 @@
         "scopes": [
           "data:read_write"
         ]
+      }
+    },
+    {
+      "id": "tripo",
+      "name": "Tripo",
+      "description": {
+        "en": "AI 3D models: agents turn text or images into 3D assets and download them, with your Tripo account.",
+        "pt-BR": "Modelos 3D com IA: os bots transformam texto ou imagens em modelos 3D e baixam os arquivos, com a sua conta Tripo."
+      },
+      "category": "creative",
+      "categories": [
+        "creative"
+      ],
+      "developer": "VAST (Tripo AI)",
+      "website": "https://www.tripo3d.ai",
+      "logo": "logo.png",
+      "connection": {
+        "type": "mcp-oauth",
+        "mcp": "https://developers.tripo3d.com/mcp",
+        "registration": "dynamic (OAuth client registration at sign-in)",
+        "scopes": []
       }
     },
     {
