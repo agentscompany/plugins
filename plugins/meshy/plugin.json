@@ -1,0 +1,20 @@
+{
+  "id": "meshy",
+  "name": "Meshy",
+  "description": {
+    "en": "AI 3D models: agents generate models from text or images, add texture, rigging and animation, and download the files, with your Meshy account.",
+    "pt-BR": "Modelos 3D com IA: os bots geram modelos de texto ou imagem, aplicam textura, rig e animação e baixam os arquivos, com a sua conta Meshy."
+  },
+  "category": "creative",
+  "categories": [
+    "creative"
+  ],
+  "developer": "Meshy",
+  "website": "https://www.meshy.ai",
+  "logo": "logo.png",
+  "connection": {
+    "type": "cli-tool",
+    "cli": "meshy-cli (npm)",
+    "login": "device code (meshy auth login --device)"
+  }
+}
