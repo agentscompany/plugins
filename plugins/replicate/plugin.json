@@ -1,0 +1,22 @@
+{
+  "id": "replicate",
+  "name": "Replicate",
+  "description": {
+    "en": "Thousands of AI models: agents search models and run them to generate images, video, audio and more, billed to your Replicate account.",
+    "pt-BR": "Milhares de modelos de IA: os bots buscam modelos e rodam para gerar imagens, vídeo, áudio e mais, cobrado na sua conta Replicate."
+  },
+  "category": "creative",
+  "categories": [
+    "creative"
+  ],
+  "developer": "Replicate",
+  "website": "https://replicate.com",
+  "logo": "logo.svg",
+  "logo_dark": "logo-dark.svg",
+  "connection": {
+    "type": "mcp-oauth",
+    "mcp": "https://mcp.replicate.com/mcp",
+    "registration": "dynamic (OAuth client registration at sign-in)",
+    "scopes": []
+  }
+}
