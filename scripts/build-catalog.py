@@ -23,6 +23,10 @@ def main():
         c = p.get("connection", {})
         if c.get("type") == "mcp-oauth" and not str(c.get("mcp", "")).startswith("https://"):
             errors.append(f"{d}: mcp must be an https URL")
+        if c.get("type") == "api-key" and "mcp" in c and not str(c["mcp"]).startswith("https://"):
+            errors.append(f"{d}: mcp must be an https URL")
+        if "skills" in p and not str(p["skills"]).startswith("https://github.com/"):
+            errors.append(f"{d}: skills must be a github.com folder URL")
         p.setdefault("categories", [p.get("category")])
         plugins.append(p)
     if errors:

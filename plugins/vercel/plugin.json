@@ -17,5 +17,6 @@
     "mcp": "https://mcp.vercel.com",
     "registration": "dynamic (OAuth client registration at sign-in)"
   },
-  "logo_dark": "logo-dark.svg"
+  "logo_dark": "logo-dark.svg",
+  "skills": "https://github.com/vercel/vercel-plugin/tree/main/skills"
 }

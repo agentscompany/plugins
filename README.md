@@ -13,14 +13,16 @@ plugins/<id>/
   README.md     what agents can and can't do, and the permissions requested
 ```
 
-`catalog.json` is the index the app reads (every 6 hours, with an offline copy). It is rebuilt from the plugin folders by `scripts/build-catalog.py`, which CI also runs on every push. A new plugin of type `mcp-oauth` whose server supports dynamic client registration works in the app without a new release; other types still need app support.
+`catalog.json` is the index the app reads (every 6 hours, with an offline copy). It is rebuilt from the plugin folders by `scripts/build-catalog.py`, which CI also runs on every push. A new plugin of type `mcp-oauth` whose server supports dynamic client registration, or of type `api-key` with an `mcp` URL, works in the app without a new release; other types still need app support.
+
+A plugin can also list the vendor's own agent skills: `"skills": "https://github.com/<owner>/<repo>/tree/<ref>/<folder>"`, a folder with one subfolder per skill (each with a `SKILL.md`). They're installed for the agents when you connect the app and removed when you disconnect.
 
 ## Connection types
 
 | Type | How it works |
 |---|---|
 | `mcp-oauth` | The service's official remote MCP server. You sign in with OAuth to the Agents Company app; tokens stay in your Agents Company daemon and agents never see them. |
-| `api-key` | You paste an API key once in the app. It stays in the daemon; agents never see it. |
+| `api-key` | You paste an API key once in the app. It stays in the daemon; agents never see it. With `mcp` (an https URL), `header` (default `Authorization`, sent as `Bearer <key>`), optional `prefix` and `key_url` (where to create the key), it works without a new release. |
 | `cli-tool` | The service's official CLI, installed on the workspace computer, with its own login. |
 | `agent-cli` | An agent CLI (Claude Code, Codex, Cursor, Grok, opencode) used as an agent's brain, signed in to your account; Cursor and Codex also take work from other agents. |
 | `browser` | The agent's own browser profile. You sign in yourself by taking over the screen; agents never type passwords. |
